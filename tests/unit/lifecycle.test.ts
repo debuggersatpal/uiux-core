@@ -2,8 +2,8 @@ import { describe, it, expect, beforeAll } from 'vitest';
 import { registerAll } from '../../src/index';
 
 describe('Lifecycle & Attributes', () => {
-  beforeAll(() => {
-    registerAll();
+  beforeAll(async () => {
+    await registerAll();
   });
 
   it('ui-button handles disabled attribute', () => {

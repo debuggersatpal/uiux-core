@@ -21,7 +21,7 @@
   "scripts": {
     "build": "tsup",
     "typecheck": "tsc --noEmit && tsc -p tsconfig.node.json --noEmit",
-    "test": "echo 'Testing complete' && exit 0",
+    "test": "vitest",
     "serve": "npx serve -l 3000 .",
     "test:unit": "vitest run tests/unit",
     "test:browser": "playwright test",

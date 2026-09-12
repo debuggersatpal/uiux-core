@@ -1,7 +1,7 @@
 export function registerAll() {
-  if (typeof window === 'undefined') return;
+  if (typeof window === 'undefined') return Promise.resolve();
 
-  import('../components/index').then((comps) => {
+  return import('../components/index').then((comps) => {
     const elements: Record<string, CustomElementConstructor> = {
       'ui-button': comps.UiButton,
       'ui-icon-button': comps.UiIconButton,

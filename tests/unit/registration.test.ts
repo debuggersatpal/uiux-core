@@ -9,23 +9,19 @@ const components = [
 ];
 
 describe('Registration', () => {
-  beforeEach(() => {
-    // Reset customElements registry mock if needed, but in happy-dom it persists.
-  });
-
-  it('registers all components idempotently', () => {
-    registerAll();
-    registerAll(); // Should not throw
+  it('registers all components idempotently', async () => {
+    await registerAll();
+    await registerAll(); // Should not throw
     
     for (const comp of components) {
       expect(customElements.get(comp)).toBeDefined();
     }
   });
 
-  it('upgrades existing elements', () => {
+  it('upgrades existing elements', async () => {
     const el = document.createElement('ui-button');
     document.body.appendChild(el);
-    registerAll();
+    await registerAll();
     expect(el.constructor.name).toBe('UiButton');
   });
 });
