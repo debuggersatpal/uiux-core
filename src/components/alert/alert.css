@@ -1,0 +1,7 @@
+
+ui-alert { display: block; margin-bottom: var(--ui-space-4); }
+.ui-alert { padding: var(--ui-space-4); border-radius: var(--ui-radius-md); border-left: 4px solid var(--ui-color-primary); background: var(--ui-color-canvas); color: var(--ui-color-ink); box-shadow: var(--ui-shadow-sm); }
+.ui-alert--info { border-left-color: var(--ui-color-info); }
+.ui-alert--success { border-left-color: var(--ui-color-success); }
+.ui-alert--warning { border-left-color: var(--ui-color-warning); }
+.ui-alert--danger { border-left-color: var(--ui-color-danger); }

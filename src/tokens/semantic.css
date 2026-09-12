@@ -1,0 +1,37 @@
+
+:root {
+  --ui-color-canvas: #ffffff;
+  --ui-color-canvas-soft: #f8fafc;
+  --ui-color-surface: #ffffff;
+  --ui-color-surface-hover: #f1f5f9;
+  
+  --ui-color-ink: #0f172a;
+  --ui-color-ink-muted: #64748b;
+  
+  --ui-color-line: #e2e8f0;
+  
+  --ui-color-primary: #047857; /* Emerald extracted logic */
+  --ui-color-primary-hover: #064e3b;
+  
+  --ui-color-success: #047857;
+  --ui-color-warning: #b45309;
+  --ui-color-danger: #b91c1c;
+  --ui-color-info: #1d4ed8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ui-color-canvas: #0f172a;
+    --ui-color-canvas-soft: #1e293b;
+    --ui-color-surface: #1e293b;
+    --ui-color-surface-hover: #334155;
+    
+    --ui-color-ink: #f8fafc;
+    --ui-color-ink-muted: #94a3b8;
+    
+    --ui-color-line: #334155;
+    
+    --ui-color-primary: #047857;
+    --ui-color-primary-hover: #34d399;
+  }
+}

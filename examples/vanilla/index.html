@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vanilla Example</title>
+</head>
+<body style="padding: 2rem; background: var(--ui-color-canvas-soft, #f8fafc); font-family: sans-serif;">
+  <ui-card interactive>
+    <h2 style="margin-top:0">Vanilla Web Components</h2>
+    <p style="color:var(--ui-color-ink-muted)">This card and the button below are native custom elements.</p>
+    
+    <ui-divider></ui-divider>
+    
+    <ui-input label="Email Address" type="email" placeholder="you@example.com"></ui-input>
+    
+    <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+      <ui-button variant="primary">Submit</ui-button>
+      <ui-button variant="default">Cancel</ui-button>
+    </div>
+  </ui-card>
+
+  <script type="module">
+    import "@uiux/core/styles.css";
+    import { registerAll } from "@uiux/core";
+    registerAll();
+  </script>
+</body>
+</html>

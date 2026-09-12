@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Component Gallery</title>
+  <link rel="stylesheet" href="../dist/styles.css">
+  <script type="module">
+    import { registerAll } from '../dist/index.js';
+    registerAll();
+  </script>
+  <style>
+    body { padding: 2rem; background: var(--ui-color-canvas-soft); font-family: sans-serif; }
+    .section { margin-bottom: 2rem; padding: 1rem; border: 1px solid #ccc; background: white; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Test Gallery</h1>
+    
+    <div class="section" id="buttons">
+      <ui-button variant="primary" id="btn-primary">Primary</ui-button>
+      <ui-icon-button aria-label="Close" id="btn-icon">×</ui-icon-button>
+      <ui-button disabled id="btn-disabled">Disabled</ui-button>
+    </div>
+    
+    <div class="section" id="forms">
+      <ui-input label="Email" type="email" id="input-email"></ui-input>
+      <ui-textarea label="Bio" id="textarea-bio"></ui-textarea>
+      <ui-checkbox id="chk-terms">Accept terms</ui-checkbox>
+      <ui-switch id="switch-notif">Notifications</ui-switch>
+    </div>
+
+    <div class="section" id="overlays">
+      <ui-tooltip text="Copy to clipboard" id="tooltip-copy">
+        <ui-button>Hover me</ui-button>
+      </ui-tooltip>
+      
+      <ui-button id="open-modal" onclick="document.getElementById('my-modal').open()">Open Modal</ui-button>
+      <ui-modal id="my-modal">
+        <h2>Modal Title</h2>
+        <ui-button onclick="this.closest('ui-modal').close()">Close</ui-button>
+      </ui-modal>
+    </div>
+  </main>
+</body>
+</html>

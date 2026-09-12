@@ -1,0 +1,5 @@
+
+ui-modal { display: block; }
+.ui-modal { border: none; border-radius: var(--ui-radius-lg); padding: 0; background: var(--ui-color-canvas); color: var(--ui-color-ink); box-shadow: var(--ui-shadow-lg); max-width: 90vw; width: 500px; margin: auto; }
+.ui-modal::backdrop { background: rgba(15, 23, 42, 0.5); backdrop-filter: blur(4px); }
+.ui-modal-content { padding: var(--ui-space-6); }

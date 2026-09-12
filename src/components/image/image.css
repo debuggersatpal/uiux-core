@@ -1,0 +1,4 @@
+
+ui-image { display: block; width: 100%; }
+.ui-image-wrapper { width: 100%; border-radius: var(--ui-radius-md); overflow: hidden; background: var(--ui-color-canvas-soft); display: flex; }
+.ui-image-wrapper img { width: 100%; height: 100%; display: block; }

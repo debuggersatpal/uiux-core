@@ -1,0 +1,18 @@
+
+ui-icon-button { display: inline-block; }
+ui-icon-button button.ui-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--ui-radius-full);
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: transparent;
+  transition: all var(--ui-motion-duration-fast) var(--ui-motion-ease-standard);
+  color: var(--ui-color-ink);
+}
+ui-icon-button button.ui-icon-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+ui-icon-button button.ui-icon-btn--default:hover:not(:disabled) { background-color: var(--ui-color-surface-hover); }
+ui-icon-button button.ui-icon-btn--sm { width: 32px; height: 32px; }
+ui-icon-button button.ui-icon-btn--md { width: 40px; height: 40px; }
+ui-icon-button button.ui-icon-btn--lg { width: 48px; height: 48px; }

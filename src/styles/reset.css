@@ -1,0 +1,4 @@
+
+.ui-element, .ui-element *, .ui-element *::before, .ui-element *::after {
+  box-sizing: border-box;
+}

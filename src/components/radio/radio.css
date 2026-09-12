@@ -1,0 +1,6 @@
+
+ui-radio { display: inline-block; }
+.ui-radio-wrapper { display: inline-flex; align-items: center; gap: var(--ui-space-2); cursor: pointer; }
+.ui-radio-input { width: 1.25rem; height: 1.25rem; accent-color: var(--ui-color-primary); cursor: pointer; margin: 0; }
+.ui-radio-input:disabled { opacity: 0.6; cursor: not-allowed; }
+.ui-radio-label { color: var(--ui-color-ink); font-size: 0.875rem; }

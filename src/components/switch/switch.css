@@ -1,0 +1,10 @@
+
+ui-switch { display: inline-block; }
+.ui-switch-wrapper { display: inline-flex; align-items: center; gap: var(--ui-space-3); cursor: pointer; }
+.ui-switch-btn { width: 44px; height: 24px; border-radius: 12px; background: var(--ui-color-line); border: none; padding: 2px; cursor: pointer; transition: background-color var(--ui-motion-duration-fast); position: relative; }
+.ui-switch-btn--checked { background: var(--ui-color-primary); }
+.ui-switch-btn:focus-visible { outline: 2px solid var(--ui-color-primary); outline-offset: 2px; }
+.ui-switch-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.ui-switch-thumb { display: block; width: 20px; height: 20px; border-radius: 50%; background: #fff; box-shadow: var(--ui-shadow-sm); transition: transform var(--ui-motion-duration-fast); }
+.ui-switch-btn--checked .ui-switch-thumb { transform: translateX(20px); }
+.ui-switch-label { color: var(--ui-color-ink); font-size: 0.875rem; }

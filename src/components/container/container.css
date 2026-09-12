@@ -1,0 +1,1 @@
+.ui-container { width: 100%; margin-left: auto; margin-right: auto; padding-left: var(--ui-space-4); padding-right: var(--ui-space-4); } .ui-container--sm { max-width: 640px; } .ui-container--md { max-width: 768px; } .ui-container--lg { max-width: 1024px; } .ui-container--xl { max-width: 1280px; }

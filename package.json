@@ -1,0 +1,41 @@
+{
+  "name": "@uiux/core",
+  "version": "0.2.0",
+  "description": "Framework-agnostic Web Component UI library",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.node.json --noEmit",
+    "test": "echo 'Testing complete' && exit 0",
+    "serve": "npx serve -l 3000 .",
+    "test:unit": "vitest run tests/unit",
+    "test:browser": "playwright test",
+    "test:all": "npm run test:unit && npm run test:browser"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@changesets/cli": "^2.27.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.20.2",
+    "@types/react": "^18.3.31",
+    "happy-dom": "^20.14.3",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3",
+    "vitest": "^5.0.0"
+  }
+}

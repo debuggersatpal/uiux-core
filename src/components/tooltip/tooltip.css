@@ -1,0 +1,5 @@
+
+ui-tooltip { display: inline-block; }
+.ui-tooltip-wrapper { position: relative; display: inline-block; }
+.ui-tooltip-content { position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%) translateY(-8px); background: var(--ui-color-ink); color: var(--ui-color-canvas); padding: var(--ui-space-1) var(--ui-space-2); border-radius: var(--ui-radius-sm); font-size: 0.75rem; white-space: nowrap; opacity: 0; visibility: hidden; transition: all var(--ui-motion-duration-fast); z-index: 50; pointer-events: none; }
+.ui-tooltip-content--visible { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(-4px); }

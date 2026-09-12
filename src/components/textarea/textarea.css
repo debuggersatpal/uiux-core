@@ -1,0 +1,3 @@
+
+ui-textarea { display: block; width: 100%; }
+ui-textarea textarea { resize: vertical; min-height: 80px; }

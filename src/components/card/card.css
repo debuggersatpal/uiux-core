@@ -1,0 +1,5 @@
+
+ui-card { display: block; }
+.ui-card { background: var(--ui-color-canvas); border: 1px solid var(--ui-color-line); border-radius: var(--ui-radius-lg); padding: var(--ui-space-6); color: var(--ui-color-ink); box-shadow: var(--ui-shadow-sm); transition: transform var(--ui-motion-duration-fast), box-shadow var(--ui-motion-duration-fast); }
+.ui-card--interactive { cursor: pointer; }
+.ui-card--interactive:hover { transform: translateY(-2px); box-shadow: var(--ui-shadow-md); }

@@ -1,0 +1,23 @@
+---
+import "@uiux/core/styles.css";
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Astro Example</title>
+  </head>
+  <body style="padding: 2rem; background: var(--ui-color-canvas-soft); font-family: sans-serif;">
+    <ui-card interactive>
+      <h2>Astro Integration</h2>
+      <p>Custom elements hydrate natively without framework overhead.</p>
+      
+      <ui-button variant="primary">Click Me</ui-button>
+    </ui-card>
+    
+    <script>
+      import { registerAll } from "@uiux/core";
+      registerAll();
+    </script>
+  </body>
+</html>

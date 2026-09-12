@@ -1,0 +1,1 @@
+.ui-skeleton { background-color: var(--ui-color-border); border-radius: var(--ui-radius-md); animation: ui-skeleton-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; } @keyframes ui-skeleton-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } } @media (prefers-reduced-motion: reduce) { .ui-skeleton { animation: none; } } .ui-skeleton--circle { border-radius: 50%; }

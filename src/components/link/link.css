@@ -1,0 +1,12 @@
+
+ui-link { display: inline; }
+ui-link a.ui-link-el {
+  color: var(--ui-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--ui-motion-duration-fast);
+}
+ui-link a.ui-link-el:hover {
+  color: var(--ui-color-primary-hover);
+  text-decoration: underline;
+}
