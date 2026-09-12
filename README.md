@@ -1,4 +1,4 @@
-# @uiux/core v0.2.0
+# @uiux/core v1.0.0
 
 > Framework-agnostic Web Components UI library.
 
@@ -24,7 +24,7 @@ npm install @uiux/core
 **local development/tarball installation:**
 
 ```bash
-npm install /absolute/path/to/uiux-core-0.2.0.tgz
+npm install /absolute/path/to/uiux-core-1.0.0.tgz
 ```
 
 ---
@@ -688,7 +688,7 @@ To test the package distribution identically to an external consumer:
 
 ```bash
 npm pack
-# Generates: uiux-core-0.2.0.tgz
+# Generates: uiux-core-1.0.0.tgz
 ```
 
 ---

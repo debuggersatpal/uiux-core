@@ -5,17 +5,6 @@ import { registerAll } from "@uiux/core";
 
 registerAll();
 
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'ui-button': any;
-      'ui-card': any;
-      'ui-input': any;
-      'ui-badge': any;
-    }
-  }
-}
-
 function App() {
   return (
     <div style={{ padding: '2rem', background: 'var(--ui-color-canvas-soft)', minHeight: '100vh', fontFamily: 'sans-serif' }}>

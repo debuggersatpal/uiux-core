@@ -2,11 +2,14 @@
   "name": "example-vite",
   "private": true,
   "type": "module",
-  "scripts": { "dev": "vite", "build": "tsc && vite build" },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
   "dependencies": {
+    "@uiux/core": "file:../../uiux-core-1.0.0.tgz",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@uiux/core": "file:../../"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",

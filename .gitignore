@@ -8,3 +8,7 @@ tsconfig.*.tsbuildinfo
 *.cjs
 *.py
 .DS_Store
+examples/*/.astro/
+examples/*/.next/
+examples/*/next-env.d.ts
+examples/*/package-lock.json
