@@ -1,0 +1,15 @@
+{
+  "name": "@uiux/tailwind",
+  "version": "1.0.0",
+  "description": "Tailwind CSS integration for @uiux/core",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "tailwindcss": ">=3.0.0"
+  },
+  "keywords": ["uiux", "tailwind", "web components"]
+}

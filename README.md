@@ -314,3 +314,71 @@ function App() {
   );
 }
 ```
+
+---
+
+## Tailwind CSS Integration (Optional)
+
+`@uiux/core` is strictly framework-agnostic and does **not** require Tailwind. However, if you use Tailwind CSS in your project, we provide an optional first-class integration package: `@uiux/tailwind`.
+
+This package exposes a Tailwind preset that maps `@uiux/core`'s semantic design tokens (colors, spacing, radius, shadows, etc.) directly into your Tailwind theme, allowing you to use utility classes that perfectly match the component library's visual system.
+
+### Installation
+
+```bash
+# @uiux/tailwind is currently available via GitHub Releases
+npm install https://github.com/debuggersatpal/uiux-core/releases/download/v1.1.0/uiux-tailwind-1.0.0.tgz
+```
+
+### Configuration
+
+Add the preset to your `tailwind.config.js`:
+
+```javascript
+import uiuxPreset from '@uiux/tailwind';
+
+export default {
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx,html}",
+  ],
+  presets: [uiuxPreset],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+### Usage
+
+Because `@uiux/core` uses **Light DOM**, you can apply Tailwind utility classes directly to the custom elements to control layout, spacing, and responsive behavior.
+
+```tsx
+<ui-container class="max-w-screen-xl">
+  {/* Tailwind flex and spacing utilities work natively */}
+  <ui-card class="p-ui-6 shadow-ui-lg rounded-ui-lg bg-ui-canvas-soft">
+    <div class="flex flex-col md:flex-row gap-ui-4 items-center">
+      <ui-badge class="mb-ui-2 md:mb-0" variant="success">Active</ui-badge>
+      
+      {/* Width overrides */}
+      <ui-input class="w-full md:w-64" placeholder="Search..."></ui-input>
+      
+      <ui-button class="w-full md:w-auto" variant="primary">Submit</ui-button>
+    </div>
+  </ui-card>
+</ui-container>
+```
+
+#### Supported Tokens
+The preset extends your Tailwind theme with the `ui-` prefix for `@uiux/core` semantics:
+- **Colors**: `bg-ui-canvas`, `text-ui-primary`, `border-ui-line`, `bg-ui-success`, etc.
+- **Spacing**: `p-ui-4`, `m-ui-2`, `gap-ui-6`, etc.
+- **Border Radius**: `rounded-ui-md`, `rounded-ui-full`
+- **Shadows**: `shadow-ui-sm`, `shadow-ui-md`
+
+#### Styling Precedence
+1. **Component Baseline**: Structural component styles.
+2. **Semantic Tokens**: `var(--ui-color-primary)`.
+3. **Tailwind Utilities**: Host-level overrides (`class="w-full"`).
+
+**Note:** Tailwind utilities apply to the host custom element. Internal native controls (like the actual `<input>` inside `<ui-input>`) manage their own encapsulated styles relying on the host's CSS variables, so they remain fully accessible and structurally sound.
