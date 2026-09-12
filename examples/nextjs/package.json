@@ -6,14 +6,15 @@
     "build": "next build"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
     "@uiux/core": "file:../../uiux-core-1.1.0.tgz",
-    "@uiux/tailwind": "file:../../packages/tailwind/uiux-tailwind-1.0.0.tgz",
+    "@uiux/tailwind": "file:../../packages/tailwind/uiux-tailwind-1.1.0.tgz",
     "autoprefixer": "^10.5.6",
     "next": "^14.1.0",
     "postcss": "^8.5.28",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.4.19"
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

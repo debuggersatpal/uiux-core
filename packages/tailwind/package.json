@@ -1,15 +1,15 @@
 {
   "name": "@uiux/tailwind",
-  "version": "1.0.0",
-  "description": "Tailwind CSS integration for @uiux/core",
-  "main": "index.js",
-  "type": "module",
+  "version": "1.1.0",
+  "description": "Tailwind CSS v4 integration for @uiux/core",
   "exports": {
-    ".": "./index.js"
+    "./theme.css": {
+      "style": "./theme.css",
+      "default": "./theme.css"
+    }
   },
-  "dependencies": {},
   "peerDependencies": {
-    "tailwindcss": ">=3.0.0"
+    "tailwindcss": ">=4.0.0"
   },
   "keywords": ["uiux", "tailwind", "web components"]
 }

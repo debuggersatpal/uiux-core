@@ -1,0 +1,36 @@
+@theme {
+  --color-ui-canvas: var(--ui-color-canvas);
+  --color-ui-canvas-soft: var(--ui-color-canvas-soft);
+  --color-ui-surface: var(--ui-color-surface);
+  --color-ui-surface-hover: var(--ui-color-surface-hover);
+  --color-ui-ink: var(--ui-color-ink);
+  --color-ui-ink-muted: var(--ui-color-ink-muted);
+  --color-ui-line: var(--ui-color-line);
+  --color-ui-primary: var(--ui-color-primary);
+  --color-ui-primary-hover: var(--ui-color-primary-hover);
+  --color-ui-success: var(--ui-color-success);
+  --color-ui-warning: var(--ui-color-warning);
+  --color-ui-danger: var(--ui-color-danger);
+  --color-ui-info: var(--ui-color-info);
+
+  --spacing-ui-1: var(--ui-space-1);
+  --spacing-ui-2: var(--ui-space-2);
+  --spacing-ui-3: var(--ui-space-3);
+  --spacing-ui-4: var(--ui-space-4);
+  --spacing-ui-5: var(--ui-space-5);
+  --spacing-ui-6: var(--ui-space-6);
+  --spacing-ui-8: var(--ui-space-8);
+  --spacing-ui-10: var(--ui-space-10);
+
+  --radius-ui-sm: var(--ui-radius-sm);
+  --radius-ui-md: var(--ui-radius-md);
+  --radius-ui-lg: var(--ui-radius-lg);
+  --radius-ui-full: var(--ui-radius-full);
+
+  --shadow-ui-sm: var(--ui-shadow-sm);
+  --shadow-ui-md: var(--ui-shadow-md);
+  --shadow-ui-lg: var(--ui-shadow-lg);
+
+  --ease-ui-standard: var(--ui-motion-ease-standard);
+  --default-transition-duration: var(--ui-motion-duration-normal);
+}
